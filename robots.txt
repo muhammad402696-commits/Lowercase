@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muhammad402696-commits.github.io/Lowercase/sitemap.xml
