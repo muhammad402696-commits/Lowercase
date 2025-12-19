@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Lowercase Project</title>
-</head>
-<body>
-  <h1>Hello World</h1>
-  <p>This is my first website.</p>
-</body>
-</html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tanveer Hussain | Web Developer</title>
+    <title>ABC Services | Simple Business Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I create simple and fast websites using HTML, CSS and GitHub Pages.">
+    <meta name="description" content="ABC Services provides reliable and affordable services for customers. Contact us today.">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: Arial, sans-serif;
             background: #f4f6f8;
             color: #333;
         }
         header {
-            background: #0d6efd;
+            background: #198754;
             color: white;
             padding: 40px 20px;
             text-align: center;
+        }
+        nav {
+            background: #146c43;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
         }
         section {
             max-width: 900px;
@@ -35,10 +37,15 @@
             border-radius: 8px;
         }
         h2 {
-            color: #0d6efd;
+            color: #198754;
         }
-        ul {
-            padding-left: 20px;
+        .btn {
+            display: inline-block;
+            background: #198754;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
         }
         footer {
             text-align: center;
@@ -47,49 +54,48 @@
             color: white;
             margin-top: 30px;
         }
-        .btn {
-            display: inline-block;
-            background: #0d6efd;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 6px;
-            margin-top: 10px;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Tanveer Hussain</h1>
-    <p>Beginner Web Developer</p>
-    <a class="btn" href="#contact">Contact Me</a>
+    <h1>ABC Services</h1>
+    <p>Reliable & Affordable Services</p>
+    <a class="btn" href="#contact">Call Now</a>
 </header>
 
-<section>
-    <h2>About Me</h2>
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
     <p>
-        I am a beginner web developer learning HTML, CSS and GitHub Pages.
-        I create clean and simple websites for individuals and small businesses.
+        ABC Services provides professional and trusted services for homes and businesses.
+        Our goal is customer satisfaction with quality work at affordable prices.
     </p>
 </section>
 
-<section>
-    <h2>Services</h2>
+<section id="services">
+    <h2>Our Services</h2>
     <ul>
-        <li>Simple Website (1–3 pages)</li>
-        <li>Portfolio Website</li>
-        <li>GitHub Pages Website</li>
+        <li>Home Services</li>
+        <li>Office Services</li>
+        <li>Maintenance & Repair</li>
+        <li>Consultation</li>
     </ul>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <h2>Contact Us</h2>
+    <p>Phone: <strong>0300-0000000</strong></p>
+    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
 </section>
 
 <footer>
-    <p>© 2025 Tanveer Hussain</p>
+    <p>© 2025 ABC Services. All rights reserved.</p>
 </footer>
 
 </body>
