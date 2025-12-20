@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ABC Services | Home Services</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>ABC Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
 
-        header {
-            background: #1e7f4f;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+    header {
+      background: #1b7f4a;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
+    .btn {
+      display: block;
+      width: 80%;
+      max-width: 300px;
+      margin: 15px auto;
+      padding: 15px;
+      background: white;
+      color: #1b7f4a;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+    }
 
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
+    nav {
+      background: #145c36;
+      text-align: center;
+      padding: 10px;
+    }
 
-        .buttons {
-            margin-top: 20px;
-        }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 14px 20px;
-            margin: 8px;
-            background: white;
-            color: #1e7f4f;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-        }
+    section {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-        section {
-            background: white;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-        }
+    h2 {
+      color: #1b7f4a;
+    }
 
-        section h2 {
-            color: #1e7f4f;
-        }
-
-        footer {
-            background: #1e7f4f;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <h1>ABC Services</h1>
-    <p>Reliable & Affordable Home Services</p>
+  <h1>ABC Services</h1>
+  <p>Reliable & Affordable Home Services</p>
 
-    <div class="buttons">
-        <a class="btn" href="tel:03402696182">📞 Call Now</a>
-        <a class="btn" href="https://wa.me/923402696182">💬 WhatsApp Now</a>
-    </div>
-</header> 
+  <!-- CALL -->
+  <a class="btn" href="tel:03402696182">📞 Call Now</a>
 
-<section>
-    <h2>About Us</h2>
-    <p>
-        ABC Services provides professional and trusted services for homes and businesses.
-        Our goal is customer satisfaction with quality work at affordable prices.
-    </p>
+  <!-- WHATSAPP -->
+  <a class="btn" href="https://wa.me/923402696182">💬 WhatsApp Now</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    ABC Services provides professional and trusted services for homes and businesses.
+    Our goal is customer satisfaction with quality work at affordable prices.
+  </p>
 </section>
 
-<section>
-    <h2>Our Services</h2>
-    <ul>
-        <li>Mobile Repair</li>
-        <li>Electrician Services</li>
-        <li>AC Repair & Installation</li>
-        <li>Home Maintenance</li>
-    </ul>
+<section id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Home Repair</li>
+    <li>Electric Work</li>
+    <li>Plumbing</li>
+    <li>Cleaning Services</li>
+  </ul>
 </section>
 
-<section>
-    <h2>Service Areas</h2>
-    <p>
-        We provide services in your city and nearby areas.  
-        Call or WhatsApp us for quick response.
-    </p>
-</section>
-
-<section>
-    <h2>Contact Us</h2>
-    <p>
-        📞 Phone: 0340-2696182 <br>
-        💬 WhatsApp: 0340-2696182
-    </p>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: 0340-2696182</p>
+  <p>💬 WhatsApp: 0340-2696182</p>
 </section>
 
 <footer>
-    © 2025 ABC Services. All Rights Reserved.
+  © 2025 ABC Services. All Rights Reserved.
 </footer>
 
 </body>
