@@ -1,38 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="I build simple, fast and affordable websites for sma
 <!--
 Author: Tanveer Hussain
-Purpose: This is a simple online page to demonstrate using the logPersonsAge function.
+Purpose: Single-page Earning App website with Home and Contact sections.
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tanveer Hussain - Work Online</title>
+  <title>Earning App | Earning Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      background: #2196f3;
+      padding: 12px 0;
+      box-shadow: 0 2px 10px rgba(60,120,200,0.06);
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      margin: 0 16px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+      transition: border 0.2s;
+      cursor: pointer;
+    }
+    nav a.active, nav a:hover {
+      border-bottom: 2px solid #fff;
+    }
+    main {
+      flex: 1;
+      max-width: 550px;
+      margin: 48px auto 0 auto;
+      padding: 32px 18px 18px 18px;
+      background: #fff;
+      box-shadow: 0 6px 20px rgba(90,130,180,0.04);
+      border-radius: 12px;
+      text-align: center;
+    }
+    h1 {
+      color: #2196f3;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #388e3c;
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .content {
+      margin-top: 18px;
+    }
+    .whatsapp-box {
+      background: #e1f5fe;
+      color: #039be5;
+      display: inline-block;
+      padding: 16px 24px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      margin-top: 25px;
+    }
+    .note {
+      color: #d32f2f;
+      font-size: 0.98rem;
+      margin-top: 7px;
+    }
+    footer {
+      text-align: center;
+      padding: 14px 0 11px 0;
+      background: #f5f5f5;
+      color: #979797;
+      font-size: 1rem;
+      margin-top: 65px;
+      border-top: 1px solid #eee;
+    }
+    @media (max-width: 600px) {
+      main {
+        margin: 24px 0 0 0;
+        padding: 20px 2vw 10px 2vw;
+      }
+      .whatsapp-box {
+        padding: 10px 3vw;
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome! Tanveer Hussain wants to work online.</h1>
-  <button onclick="logPersonsAge('Tanveer Hussain', 18, true)">
-    Show My Age
-  </button>
-  <button onclick="logPersonsAge('Tanveer Hussain', 18, false)">
-    Hide My Age
-  </button>
-  <script src="logPersonsAge.js"></script>
+  <nav>
+    <a id="homeTab" class="active" onclick="showPage('home')">Home</a>
+    <a id="contactTab" onclick="showPage('contact')">Contact</a>
+  </nav>
+  <main>
+    <div id="homePage">
+      <h1>Earning App</h1>
+      <p class="subtitle">Welcome to the Earning Website</p>
+      <section class="content">
+        <h2>Start earning online today!</h2>
+        <p>
+          Discover new ways to earn money online with our trusted platform.<br>
+          Simple, secure, and effective.
+        </p>
+      </section>
+    </div>
+    <div id="contactPage" style="display:none">
+      <h1>Contact Us</h1>
+      <section class="content">
+        <h2>WhatsApp</h2>
+        <div class="whatsapp-box">
+          <b>0340-2696182</b>
+          <div class="note">(do not call)</div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Tanveer Hussain | Earning Website
+  </footer>
+  <script>
+    function showPage(page) {
+      // Hide both pages
+      document.getElementById('homePage').style.display = 'none';
+      document.getElementById('contactPage').style.display = 'none';
+      // Remove active class from both tabs
+      document.getElementById('homeTab').classList.remove('active');
+      document.getElementById('contactTab').classList.remove('active');
+      // Show selected page and set active
+      if (page === 'home') {
+        document.getElementById('homePage').style.display = '';
+        document.getElementById('homeTab').classList.add('active');
+      } else {
+        document.getElementById('contactPage').style.display = '';
+        document.getElementById('contactTab').classList.add('active');
+      }
+    }
+  </script>
 </body>
 </html>
-// This function is designed for working online.
-
-function logPersonsAge(name, age, shouldRevealAge) {
-  if (shouldRevealAge) {
-    alert(name + " is " + age + " years old.");
-  } else {
-    alert(name + " does not want to reveal their age.");
-  }
-}
-.
