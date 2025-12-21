@@ -122,3 +122,12 @@ Purpose: This is a simple online page to demonstrate using the logPersonsAge fun
   <script src="logPersonsAge.js"></script>
 </body>
 </html>
+// This function is designed for working online.
+
+function logPersonsAge(name, age, shouldRevealAge) {
+  if (shouldRevealAge) {
+    alert(name + " is " + age + " years old.");
+  } else {
+    alert(name + " does not want to reveal their age.");
+  }
+}
